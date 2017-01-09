@@ -1,14 +1,9 @@
-import templateUrl from './app-container.html';
-
 import angular from 'angular';
-import uiRouter from 'angular-ui-router';
+
+import navComponent from './components/nav';
 
 const app = angular.module('app', [
-    uiRouter
-])
-    .component('test', {
-        templateUrl
-    });
-
+    navComponent
+]);
 
 export default app;
