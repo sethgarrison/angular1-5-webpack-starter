@@ -1,13 +1,12 @@
 //THIRD PARTY
 import angular from 'angular';
 
-require('./style.scss');
-//EXTERNAL MODULES
+import templateUrl from './nav.html';
+import './style.scss';
 
-//INTERNAL
-
-const module = angular.module('component.nav', [])
+const myNav = angular.module('component.nav', [])
     .component('myNav', {
-        template: require('./nav.html')
+        templateUrl
     });
-export default module.name;
+
+export default myNav.name;
